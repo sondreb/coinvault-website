@@ -97,6 +97,17 @@ button:hover,
     cursor: pointer;
 }
 
+.button:hover {
+    /*#98263f;*/
+
+    background: rgba(0, 0, 0, 0.75);
+
+    /* border: 2px solid #98263f; */
+    color: whitesmoke;
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+
 .button,
 .button-primary {
     white-space: nowrap;
@@ -113,17 +124,6 @@ button:hover,
     color: white;
     text-decoration: none;
     transition: 0.3s;
-}
-
-.button:hover {
-    /*#98263f;*/
-
-    background: rgba(0, 0, 0, 0.2);
-
-    /* border: 2px solid #98263f; */
-    color: whitesmoke;
-    /* text-decoration: underline; */
-    cursor: pointer;
 }
 
 a {
@@ -163,12 +163,17 @@ footer {
 
 .section-1 {
     padding-top: 2em;
-    background-color: #091c3a;
+    /* background-color: #091c3a; */
+    background: rgb(16, 19, 34);
+    background: linear-gradient(180deg, rgba(16, 19, 34, 1) 0%, rgba(9, 28, 58, 1) 100%);
 }
 
 .section-2 {
     padding-top: 2em;
     background-color: #3870ba;
+
+    background: rgb(9, 28, 58);
+    background: linear-gradient(180deg, rgba(9, 28, 58, 1) 0%, rgba(56, 112, 186, 1) 100%);
 }
 
 .section-2 a {
@@ -190,6 +195,14 @@ footer {
     min-height: 400px;
     background-color: white;
     color: #1b1b1b;
+
+    background: rgb(56, 112, 186);
+    background: linear-gradient(180deg, rgba(56, 112, 186, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.section-5 {
+    background: rgb(9, 28, 58);
+    background: linear-gradient(180deg, rgba(9, 28, 58, 1) 0%, rgba(7, 8, 13, 1) 30%);
 }
 
 .section-4 a {
@@ -231,6 +244,15 @@ footer {
     margin-left: 10px;
     margin-bottom: 10px;
     float: right;
+}
+
+.drawing-right-image {
+    max-width: 360px;
+    clear: both;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: right;
+    border-radius: 10px;
 }
 
 h3 {
@@ -290,6 +312,10 @@ h3 {
         max-width: 200px;
     }
 
+    .drawing-right-image {
+        max-width: 200px;
+    }
+
     .visible-large {
         display: none;
     }
@@ -308,6 +334,19 @@ h3 {
         font-size: 3em;
     }
 
+    .profile {
+        max-width: 96px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button,
+    .button-primary {
+        clear: both;
+        display: block;
+        margin-bottom: 1em;
+    }
+
     .drawing {
         max-width: 140px;
     }
@@ -318,16 +357,9 @@ h3 {
         margin-bottom: 4px;
     }
 
-    .profile {
-        max-width: 96px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .button,
-    .button-primary {
-        clear: both;
-        display: block;
-        margin-bottom: 1em;
+    .drawing-right-image {
+        max-width: 140px;
+        margin-left: 4px;
+        margin-bottom: 4px;
     }
 }
