@@ -171,6 +171,14 @@ footer {
     background-color: #3870BA;
 }
 
+.section-2 a {
+    color: white;
+}
+
+.section-2 a:hover {
+    color: silver;
+}
+
 .section-3 {
     padding-top: 2em;
     background-color: #5097F1;
