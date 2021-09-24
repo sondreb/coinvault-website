@@ -5,7 +5,9 @@ body {
     color: white;
     background-color: #07080d;
     /* font-family: 'Source Sans Pro', sans-serif; */
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    weight: 400;
     overflow: overlay;
 }
 
@@ -28,6 +30,14 @@ body {
     height: 100%;
     border: 1px solid red;
 } */
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
 
 h1 {
     margin: 0;
